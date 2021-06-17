@@ -187,8 +187,10 @@ header{
 .footer-list a{
     color: white;
     text-decoration: none;
+    font-size: 20px;
 }
 .footer-list li{
+    font-size: 20px;
     margin-bottom: 10px;
     list-style-type: none;
     font-weight: normal;
@@ -271,7 +273,7 @@ header{
 .content-slider{
     padding-top: 20px;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 100px);
     overflow: hidden;
     position: relative;
     display: flex;
@@ -304,10 +306,10 @@ header{
 }
 .container-slider{
     width: 95%;
-    height: 500px;
+    height: 100%;
     display: flex;
     justify-content: left;
-    overflow-x: hidden;
+    align-items: center;
 }
 .container-slider::-webkit-scrollbar{
     visibility: hidden;
@@ -336,142 +338,6 @@ header{
     border: 1px solid #f0f2f5;
     border-radius: 7px;
 }
-
-/*  CONTATOS */
-.contact-title{
-    margin-top: 100px;
-    margin-bottom: 20px;
-    font-size: 50px;
-}
-.content-contact{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.contacts-info{
-    border: 1px solid #333333;
-    border-radius: 7px;
-    width: 50%;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-.contacts-info h2{
-    font-size: 30px;
-}
-.contacts-info p{
-    font-size: 20px;
-    text-decoration: none;
-    text-align: center;
-}
-.contact-item img{
-    background-color: #333333;
-    width: 75px;
-    border-radius: 7px;
-    margin: 15px;
-}
-
-
-.text-area{
-    max-width: 500px;
-    max-height: 120px;
-    min-height: 70px;
-    min-width: 70px;
-    width: 400px;
-    max-height: 100px;
-}
-
-/*  PROJECTS    */
-
-.content-projects{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    background: url(../img/wave.svg);
-    background-repeat: no-repeat;
-    background-position-y: 100%;
-}
-
-.project-text{
-    width: 40%;
-
-}
-.project-text-dive{
-    width: 45%;
-}
-.project-item{
-    border: 1px solid black;
-    width: 40%;
-    height: 50%;
-    text-align: center;
-    align-items: center;
-    justify-content: start;
-    display: flex;
-    flex-direction: column;
-}
-
-.content-dive{
-    background: #63E1FD;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-}
-
-.content-dive img{
-    width: 40%;
-}
-
-.project-text-dive-title{
-    color: white;
-    font-size: 60px;
-}
-
-.project-text-dive-content{
-    color: white;
-    font-size: 20px;
-}
-
-.img-celular-levantado{
-    height: 60%;
-}
-
-.img-celular-italico{
-    width: 10%;
-}
-
-/*  CORES   */
-.azul{
-    background-color: #4a5a7d;
-}
-
-.branco{
-    background-color: #f0f2f5;
-    
-}
-
-/* keyframes */
-@keyframes seta{
-    0%{bottom: 10px;}
-    50%{bottom: 2px;}
-    100%{bottom: 10px;}
-}
-
-@keyframes boa{
-    0%{cursor: url("https://cdn.joypixels.com/emoji/joypixels/6.5/png/unicode/128/1f44c.png"),auto;}
-    50%{cursor: non};
-    100%{cursor: url("../img/chavinho.png"),auto;}
-}
-
-
-
-
 .card {
     position:absolute;
     top:50%;
@@ -551,3 +417,138 @@ header{
 .card-social a{
     height: 40px;
 }
+
+/*  CONTATOS */
+.contact-title{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.content-contact{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contacts-info{
+    border: 1px solid #333333;
+    border-radius: 7px;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.contacts-info h2{
+    font-size: 30px;
+}
+.contacts-info p{
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.contact-item img{
+    background-color: #333333;
+    width: 75px;
+    border-radius: 7px;
+    margin: 15px;
+}
+
+
+
+
+/*  PROJECTS    */
+
+.content-projects{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background: url(../img/wave.svg);
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+}
+
+.project-text{
+    width: 40%;
+
+}
+.project-text-dive{
+    width: 45%;
+}
+.project-item{
+    border: 1px solid black;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-dive{
+    background: #63E1FD;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.content-dive img{
+    width: 40%;
+}
+
+.project-text-dive-title{
+    color: white;
+    font-size: 60px;
+}
+
+.project-text-dive-content{
+    color: white;
+    font-size: 20px;
+}
+
+.img-celular-levantado{
+    height: 60%;
+}
+
+.img-celular-italico{
+    width: 10%;
+}
+
+/*  CORES   */
+.azul{
+    background: linear-gradient(-45deg, #23a6d5, #4a5a7d);
+    background-size: 400% 400%;
+
+}
+
+.branco{
+    background-color: #f0f2f5;
+    
+}
+
+/* keyframes */
+@keyframes seta{
+    0%{bottom: 10px;}
+    50%{bottom: 2px;}
+    100%{bottom: 10px;}
+}
+
+@keyframes boa{
+    0%{cursor: url("https://cdn.joypixels.com/emoji/joypixels/6.5/png/unicode/128/1f44c.png"),auto;}
+    50%{cursor: non};
+    100%{cursor: url("../img/chavinho.png"),auto;}
+}
+
+/* media query */
+
+/* @media (min-width: 1025px) and (max-width: 1280px) {
+    * {
+      background-color: lightblue;
+    }
+  } */
