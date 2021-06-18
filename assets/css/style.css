@@ -320,7 +320,6 @@ header{
     position: relative;
     left: 0;
     text-align: center;
-    font-size: 100px;
     font-weight: bold;
     margin: 10px 20px;
     display: flex;
@@ -408,8 +407,11 @@ header{
 }
 .card-social-icons{
     position: absolute;
-    top: 75%;
-    right: 25%;
+    top: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-evenly;
 }
 .card-disc{
     font-size: 16px;
